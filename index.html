@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Nation Hero - Road Issues Reporting App</title>
+    <meta name="description"
+        content="Download the Nation Hero app to help citizens understand and report road issues. Scan the QR code to install directly on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-road"></i>
+                </div>
+            </div>
+            <h1>Nation Hero</h1>
+            <p class="tagline">Empowering authorities with data-driven insights. Providing critical information to help
+                decision-makers prioritize road repair and infrastructure maintenance.</p>
+        </header>
+
+        <main class="main-content">
+            <div class="qr-section">
+                <div class="qr-card">
+                    <span class="badge">Direct Install</span>
+                    <p class="instruction-text">Scan to get started</p>
+                    <div class="qr-image">
+                        <img src="assets/qr_code.png" alt="Nation Hero QR Code">
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Point your camera at
+                        the QR code to access the secure download link.</p>
+
+                    <div
+                        style="background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 1rem; border: 1px solid var(--glass-border); text-align: left;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">
+                            <i class="fas fa-bullhorn" style="color: var(--primary-light); margin-right: 5px;"></i>
+                            <strong>Note:</strong> After scanning, you may see an advertisement from our partner. Simply
+                            look for and click <strong>"Open Link"</strong> or <strong>"Open QR Code"</strong> to
+                            proceed to the app download.
+                        </p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1TRPCizwGheuW_Tq7S76-gIsHgtzm3sKs/view?usp=share_link"
+                        target="_blank" class="btn" style="width: 100%; margin-top: 1.5rem; display: block;">Download
+                        App Directly</a>
+                </div>
+            </div>
+
+            <div class="download-info">
+                <h2 style="font-size: 2rem; margin-bottom: 2rem;">Installation Guide</h2>
+
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3>Scan & Navigate</h3>
+                        <p>Scan the code. If an ad appears, look for the <strong>"Open Link"</strong> or <strong>"Open
+                                QR Code"</strong> button to
+                            reach the download page.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3>Enable External Sources</h3>
+                        <p>To install the APK, allow installations from your browser in <strong>Settings > Apps >
+                                Special Access > Install Unknown Apps</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3>Data-Driven Action</h3>
+                        <p>Once installed, your reports will provide authorities with the data needed to make informed
+                            decisions about road repairs.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(255, 107, 107, 0.1); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(255, 107, 107, 0.2);">
+                    <p style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">
+                        <i class="fas fa-info-circle"></i> Note: Turning on "Allow other sources" is required for
+                        manually installed apps. We ensure our app is safe and secure for all users.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Nation Hero Project. All rights reserved.</p>
+            <p style="margin-top: 1rem;">Empowering citizens for a better tomorrow.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth entry animation for cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.step-card, .qr-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease-out';
+
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+
+</html>
